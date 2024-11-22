@@ -1,0 +1,136 @@
+body {
+  background-image: url(../images/bg.png);
+  background-size: cover;
+
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 700px;
+  margin: 30px 30px;
+  margin-right: 50px;
+}
+.weather-preview {
+  z-index: 2;
+  flex: 2;
+  background-image: url(../images/cloud.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+  /*clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);*/
+  border-radius: 15px;
+}
+.weather-properties {
+  z-index: 1;
+  flex: 3;
+  background-color: #202632;
+  margin: 30px -30px;
+  border-radius: 30px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding-left: 40px;
+  padding-right: 10px;;
+ 
+}
+.weather-preview-stat {
+  background-color: #222933;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px
+}
+.stat-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.stat-type svg {
+  margin-right: 10px;
+}
+.hum-wind{
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.weather-cel-day-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #222933;
+  box-shadow: none;
+}
+.day-date {
+  margin: 0;
+  justify-items: center;
+  
+}
+.day-date h3 {
+  margin: 0;
+}
+.weather-cel-day-date svg {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
+h2, h3, h1{
+  font-family: montserrat;
+  font-weight:500;
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline;
+}
+.countries {
+  width: 100%;
+  height: 40px;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  border-radius: 20px;
+  color: black;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 17px;
+}
+.text-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-container h1, h3 {
+  display: block;
+  margin-left: 30px;
+}
+.text-container h1 {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.top-text {
+  padding-top: -20px;
+
+}
+.bottom-text-h3 {
+  margin-top: 0;
+  margin-bottom: 30px; 
+}
