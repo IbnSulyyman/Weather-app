@@ -1,5 +1,5 @@
 const API_KEY = 'c1a2a23379cb4c06a2a153152242211';
-const BASE_URL = 'http://api.weatherapi.com/v1/current.json';
+const BASE_URL = 'https://api.weatherapi.com/v1/current.json';
 
 function fetchWeather(location) {
   const url = `${BASE_URL}?key=${API_KEY}&q=${location}`;
